@@ -1,0 +1,37 @@
+{
+ "name": "MEDISTA Management System",
+ "short_name": "MEDISTA",
+ "lang": "ms",
+ "start_url": "./index.html",
+ "scope": "./",
+ "display": "standalone",
+ "background_color": "#faf9fc",
+ "theme_color": "#48246b",
+ "description": "Portal ahli, pentadbiran NGO, laporan, program, minit, kewangan, peta dan e-voting perintis.",
+ "icons": [
+  {
+   "src": "./icons/icon-192.png",
+   "sizes": "192x192",
+   "type": "image/png",
+   "purpose": "any"
+  },
+  {
+   "src": "./icons/icon-512.png",
+   "sizes": "512x512",
+   "type": "image/png",
+   "purpose": "any"
+  },
+  {
+   "src": "./icons/icon-maskable-512.png",
+   "sizes": "512x512",
+   "type": "image/png",
+   "purpose": "maskable"
+  }
+ ],
+ "id": "./",
+ "orientation": "any",
+ "categories": [
+  "productivity",
+  "business"
+ ]
+}
