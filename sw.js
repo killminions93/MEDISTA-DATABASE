@@ -1,6 +1,6 @@
 /* Hanya kulit aplikasi dicache. Data pengguna, auth dan panggilan API tidak pernah dicache. */
-const CACHE='medista-v6-shell-20261103';
-const ASSETS=['./','./index.html','./style.css','./app.js','./map-data.js','./doc-export.js','./kk-export.js','./vendor/jspdf.umd.min.js','./vendor/jspdf.plugin.autotable.min.js','./brand.js','./config.js','./manifest.webmanifest','./icons/icon-192.png','./icons/icon-512.png','./icons/icon-maskable-512.png','./icons/apple-touch-icon.png','./icons/favicon-64.png','./icons/medista-logo.png'];
+const CACHE='medista-v7-shell-20261105';
+const ASSETS=['./','./index.html','./style.css','./app.js','./map-data.js','./doc-export.js','./kk-export.js','./pay.js','./vendor/jspdf.umd.min.js','./vendor/jspdf.plugin.autotable.min.js','./brand.js','./config.js','./manifest.webmanifest','./icons/icon-192.png','./icons/icon-512.png','./icons/icon-maskable-512.png','./icons/apple-touch-icon.png','./icons/favicon-64.png','./icons/medista-logo.png'];
 self.addEventListener('install',e=>{e.waitUntil(caches.open(CACHE).then(c=>c.addAll(ASSETS)).then(()=>self.skipWaiting()));});
 self.addEventListener('activate',e=>{e.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(k=>k.startsWith('medista-')&&k!==CACHE).map(k=>caches.delete(k)))).then(()=>self.clients.claim()));});
 /* Rangkaian dahulu supaya versi baharu terus sampai; cache hanya bila offline. */
